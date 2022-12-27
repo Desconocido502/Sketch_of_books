@@ -12,11 +12,19 @@ quad(158, 55, 199, 14, 392, 66, 351, 107);
 rect(180, 120, 220, 60, 20);
 //(Coord en X, Coord en Y, ancho, altura)
 ellipse(100, 140, 50, 80);
-//(Coord en X, Coord en Y, ancho, aktura, arco inicial, arco final)
+strokeWeight(4); // Grosor de borde de 8 pixels.
+//(Coord en X, Coord en Y, ancho, altura, arco inicial, arco final)
 arc(60, 190, 50, 50, 0, PI+QUARTER_PI); //HALF_PI, PI, PI+QUARTER_PI, TWO_PI
 
+strokeJoin(ROUND); //MITER, BEVEL, ROUND, le da estilo a las articulaciones que conectan los segmentos
 bezier(620, 250, 80, 100, 590, 480, 250, 290);
 
-ellipse(120, 260, 50, 120);
-ellipse(100, 310, 40, 40);
-ellipse(140, 310, 40, 40);
+//ellipse(120, 260, 50, 120);
+//ellipse(100, 310, 40, 40);
+//ellipse(140, 310, 40, 40);
+
+//background(128);
+//background(204, 226, 225);
+fill(128);
+stroke(255);
+rect(20, 235, 60,60);
